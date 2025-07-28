@@ -151,7 +151,7 @@ _A one-stop repository of ready-to-use Model Context Protocol servers for Coding
 ```bash
 # 1. Clone the repo
 git clone https://github.com/ChanduKaranam/Developer-MCP-.git
-cd MCP-Severs
+cd MCP-Servers
 
 # 2. Pick the server you need
 cd MCP-Severs/<server-folder>
