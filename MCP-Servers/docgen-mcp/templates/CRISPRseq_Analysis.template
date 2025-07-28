@@ -1,0 +1,64 @@
+{{metadata:name:CRISPRseq_Analysis Documentation}}
+{{metadata:description:Template for documenting any source-code module / repo}}
+{{metadata:category:software}}
+{{metadata:requiredSources:repo,readme,tests,docs}}
+
+# {{projectId}} — {{moduleName}} Code Documentation
+
+Repository: {{repoUrl}}
+Module / Package: {{moduleName}}
+Language(s): {{languages}}
+Last Commit: {{lastCommit}}
+CI Status: {{ciBadge}}
+
+Lead Maintainer: {{leadMaintainer}}
+Contributors: {{contributors}}
+
+---
+
+## 1. Purpose & High-Level Overview
+{{section:overview}}
+
+## 2. System Context & Architecture
+{{section:context}}
+{{diagram:architecture.svg}}
+
+### 2.1 Key Components
+| Component | Responsibility | Public Interface |
+|-----------|----------------|------------------|
+{{#components}}
+| {{name}} | {{responsibility}} | `{{interface}}` |
+{{/components}}
+
+## 3. Public API
+{{section:api}}
+Auto-generated from latest tag `{{latestTag}}`.
+
+### 3.1 Core Classes / Functions
+{{code:src/index.ts}}
+
+### 3.2 Usage Example
+{{usage:examples/basic_usage.py}}
+
+## 4. Internal Design
+{{section:design}}
+
+### 4.1 Module Structure
+{{tree:src}}
+
+### 4.2 Key Algorithms / Data Structures
+{{section:algorithms}}
+{{code:src/algorithms/sort.ts}}
+
+### 4.3 Configuration & Environment
+{{file:.env.example}}
+
+## 5. Testing Strategy
+{{section:tests}}
+Coverage: {{coverage}}%
+
+{{code:tests/integration/core.test.js}}
+
+### 5.1 Running Tests
+```bash
+{{testCommand}}
